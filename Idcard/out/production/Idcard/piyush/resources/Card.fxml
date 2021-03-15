@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="600.0" styleClass="container" stylesheets="@Card.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piyush.controllers.CardController">
+   <left>
+      <AnchorPane prefHeight="373.0" prefWidth="247.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="profilepic" fitHeight="172.0" fitWidth="209.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="Name" alignment="CENTER" layoutX="9.0" layoutY="194.0" prefHeight="23.0" prefWidth="237.0" styleClass="label1" stylesheets="@Card.css" text="Piyush Joshi">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="MS Outlook" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Profession" alignment="CENTER" depthTest="ENABLE" layoutX="9.0" layoutY="247.0" prefHeight="23.0" prefWidth="237.0" styleClass="label1" stylesheets="@Card.css" text="Profession">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Polygon fill="#a2bcd6" layoutX="167.0" layoutY="126.0" opacity="0.11" points="49.33330154418945, 33.99999237060547, 68.66667938232422, 41.999996185302734, 68.66667175292969, 58.66667175292969" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#a2bcd6" layoutX="157.0" layoutY="-23.0" opacity="0.11" points="55.66667175292969, 44.99999237060547, 71.99998474121094, 44.99999237060547, 68.66667175292969, 56.33333206176758" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#a2bcd6" layoutX="-36.0" layoutY="-20.0" opacity="0.11" points="49.33330154418945, 33.99999237060547, 68.66667938232422, 41.999996185302734, 49.33329391479492, 60.66667556762695" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <GridPane prefHeight="373.0" prefWidth="339.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.99997965494794" minWidth="10.0" prefWidth="281.99997965494794" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.33331807454425" minWidth="3.66668701171875" prefWidth="57.333353678385436" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="72.0" prefHeight="36.0" prefWidth="342.0" text="SHADOW SOFTS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Artifakt Element Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Polygon fill="#104478" layoutX="39.0" layoutY="105.0" opacity="0.23" points="36.99999237060547, -4.000007629394531, 239.66665649414062, -4.000007629394531, -9.000009536743164, -40.33332061767578" stroke="BLACK" strokeType="INSIDE">
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="1.03" specularExponent="40.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Polygon>
+                  <Polygon fill="#a2bcd6" layoutX="-8.0" layoutY="84.0" opacity="0.11" points="49.33330154418945, 33.99999237060547, 68.66667938232422, 41.999996185302734, 58.66666793823242, 54.66665267944336" stroke="BLACK" strokeType="INSIDE" />
+                  <Polyline fill="BLACK" layoutX="239.0" layoutY="36.0" opacity="0.3" points="14.333343505859375, 2.666656494140625, -10.999969482421875, 28.66668701171875, 38.33332824707031, 34.66668701171875, -45.00001525878906, 34.66668701171875" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="DOB" prefHeight="29.0" prefWidth="329.0" text="DOB" GridPane.rowIndex="1">
+               <font>
+                  <Font name="MS Outlook" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="ADDRESS" prefHeight="29.0" prefWidth="329.0" text="ADDRESS" GridPane.rowIndex="2">
+               <font>
+                  <Font name="MS Outlook" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="PHONE" prefHeight="29.0" prefWidth="329.0" text="PHONE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="MS Outlook" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="CITY" prefHeight="29.0" prefWidth="329.0" text="CITY" GridPane.rowIndex="4">
+               <font>
+                  <Font name="MS Outlook" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="GENDER" prefHeight="29.0" prefWidth="329.0" text="GENDER" GridPane.rowIndex="5">
+               <font>
+                  <Font name="MS Outlook" size="13.0" />
+               </font>
+            </Label>
+            <Polygon fill="#a2bcd6" opacity="0.11" points="11.333317756652832, 32.66666793823242, 68.66667938232422, 41.999996185302734, 37.333309173583984, 56.000030517578125" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="4" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#39a0ff" height="215.0" opacity="0.17" stroke="BLACK" strokeType="INSIDE" width="335.0" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="60.0" top="120.0" />
+               </GridPane.margin>
+            </Rectangle>
+            <ImageView fitHeight="31.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../image/barcode-306926-960-720_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </right>
+</BorderPane>

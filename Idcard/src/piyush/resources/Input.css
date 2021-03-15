@@ -1,0 +1,21 @@
+.container{
+   -fx-background-color: linear-gradient(from 0px 0px to 600px 17px, #99c1de, #caf0f8);
+}
+.button1 {
+	-fx-background-color: linear-gradient(from 0px 0px to 190px 40px,#eff7f6, #e2fdff);
+	-fx-text-fill: #383640;
+}
+
+.button1:hover {
+	-fx-background-color: linear-gradient(#64a6bd, #1a659e);
+	-fx-text-fill: #ffffff;
+}
+.button2 {
+	-fx-background-color: #ff9ebb;
+	-fx-text-fill: #383640;
+}
+
+.button2:hover {
+	-fx-background-color: linear-gradient(#e05780, #ba181b);
+	-fx-text-fill: #ffffff;
+}

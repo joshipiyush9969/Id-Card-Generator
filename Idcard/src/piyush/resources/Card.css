@@ -1,0 +1,7 @@
+.container{
+   -fx-background-color: linear-gradient(from 0px 0px to 600px 17px, #457b9d, #caf0f8);
+}
+.label1{
+-fx-background-color:linear-gradient(from 0px 0px to 600px 17px, #aed9e0, #788bff);
+
+}
